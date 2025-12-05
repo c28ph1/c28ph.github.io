@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Major+Mono+Display&display=swap" rel="stylesheet">
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+
+	body{
+		background-color: darkred;
+	}
+
+	#rectangle1{
+		position: absolute;
+		top: 0px;
+		left: 0px;
+	}
+
+	#rectangle2{
+		position: absolute;
+		top: 0px;
+		right: 0px;
+	}
+
+	#rectangle3{
+		position: absolute;
+		top: 0px;
+		left: 10%;
+	}
+
+	#rectangle4{
+		position: absolute;
+		top: 0px;
+		right: 10%;
+	}
+
+	#rectangle5{
+		position: absolute;
+		top: 0px;
+		left: 20%;
+	}
+
+	#rectangle6{
+		position: absolute;
+		top: 0px;
+		right: 20%;
+	}
+
+	.rectangle{
+		height: 100vh;
+		width: 10%;
+		background-color: green;
+	}
+
+	.rectangleb{
+		height: 100vh;
+		width: 10%;
+		background-color: white;
+	}
+
+	#circle1{
+		height: 100px;
+		width: 100px;
+		background-color: whitesmoke;		
+		position: relative;
+		border-radius: 50%;
+		margin: auto;
+		top: 230px;
+	}
+
+	#circle2{
+		height: 200px;
+		width: 200px;
+		background-color: whitesmoke;
+		position: relative;
+		border-radius: 50%;
+		margin: auto;
+		top: 220px;
+	}
+	
+	#circle3{
+		height: 300px;
+		width: 300px;
+		background-color: whitesmoke;
+		position: relative;
+		border-radius: 50%;
+		margin: auto;
+		top: 200px;
+	}
+
+	#merrychristmas{
+		color: white;
+		font-size: 70px;
+		font-family: "Londrina Outline";
+		position: relative;
+		bottom: 550px;
+		text-align: center;
+	}
+
+	#click{
+		color: white;
+		font-size: 30px;
+		font-family: "Londrina Outline";
+		position: relative;
+		bottom: 540px;
+		text-align: center;
+	}
+
+	</style>
+
+
+	
+
+
+</head>
+
+<body>
+
+<div id="rectangle1" class="rectangle"></div>
+<div id="rectangle2" class="rectangle"></div>
+<div id="rectangle3" class="rectangleb"></div>
+<div id="rectangle4" class="rectangleb"></div>
+<div id="rectangle5" class="rectangle"></div>
+<div id="rectangle6" class="rectangle"></div>
+<div id="circle1"></div>
+<div id="circle2"></div>
+<div id="circle3"></div>
+<div id="merrychristmas">Merry Christmas!</div>
+<div id="click">click on the snow man's head</div>
+
+
+<audio id="music" src="woah.m4a">
+</audio>
+
+<audio id="music2" src="woah2.m4a">
+</audio>
+
+<audio id="music3" src="woah3.m4a">
+</audio>
+
+<script type="text/javascript">
+
+	circle1.addEventListener("click", function(){
+		music.play()
+		music2.play()
+		music3.play()
+	})
+
+
+
+</script>
+
+</body>
+</html>

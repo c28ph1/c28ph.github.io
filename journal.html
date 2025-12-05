@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Major+Mono+Display&display=swap" rel="stylesheet">
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+
+<style type="text/css">
+
+	body{
+		background-image: url(https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+	}
+
+	.entry{
+		font-size: 50px;
+		font-family: "Major Mono Display";
+		color: white;}
+
+	.body{
+		font-size: 20px;
+		font-family: "Londrina Outline";
+		color: white;}
+
+	#arrow{
+			width: 200px;
+			height: 300px;
+			background-image: url(arrowcopy.png);
+			position: absolute;
+			top: 550px;
+			left: 50px;
+			background-size: contain;
+			background-repeat: no-repeat;
+			animation-name: shake;
+			animation-duration: 5s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+		}
+		
+		#home{
+			color: white;
+			font-size: 50px;
+			font-family: "Major Mono Display";
+			text-decoration: none;
+			position: absolute;
+			top: 625px;
+			left: 300px;
+					}
+
+@keyframes shake{
+	0%{transform: translateX(0) rotate(0deg);}
+
+  15% {transform: translateX(-20px) rotate(-5deg);}
+
+  30% {transform: translateX(15px) rotate(3deg); }
+
+  45% {transform: translateX(-10px) rotate(-3deg); }
+
+  60% {transform: translateX(5px) rotate(2deg);}
+
+  75% {transform: translateX(-2px) 
+  	rotate(-1deg);}
+
+  100% {transform: translateX(0) rotate(0deg);}
+
+}
+
+</style>
+<body>
+
+<br>
+<br> 
+
+<a class="entry">
+	JOURNAL ENTRY ONE	
+<br>
+	Mon, Nov. 3rd	
+</a>
+
+<br>
+<br>
+
+<a class="body">
+	Today is day 9 aboard the station. We did not succeed in our attempts at getting the operating systems <br> up and running, and time is running out. Our team is lacking motivation, and we failed to complete unecessary <br> maintnance on the station. However, we did persist in getting the station operating systems up and running, <br> but  to no avail. How much longer can this go on?
+</a>
+
+<br><br><br>
+
+<a class="entry">
+	JOURNAL ENTRY TWO	
+<br>
+	Thurs, Nov. 6th	
+</a>
+
+<br><br>
+
+<a class="body">
+	Today is day 12 aboard the station. We did not succeed in our attempts at getting the operating systems <br> up and running, and time is running out. In the meantime, we updated the projects and journal modules of <br> the station. They are both fully funtional - for now. Hopefully we will be rescued soon - our supplies are <br> dwindling.  We don't have much time.
+</a>
+
+<br><br><br>
+
+<a href="index.html">
+	<div id="home">RETURN TO HOME</div>
+</a>
+
+<a id="arrow"></a>
+
+</html>
