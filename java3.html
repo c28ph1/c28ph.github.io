@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<style type="text/css">
+
+body{
+	background-color: orange;
+}
+
+#header{
+	color: brown;
+	font-size: 50px;
+	margin: 0;
+  	position: absolute;
+  	top: 40%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+}
+
+#header2{
+	color: brown;
+	font-size: 50px;
+	margin: 0;
+  	position: absolute;
+  	top: 60%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+}
+
+#header3{
+	color: brown;
+	font-size: 50px;
+	margin: 0;
+  	position: absolute;
+  	top: 80%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	font-style: italic;
+
+}
+
+#text{
+	color: brown;
+	font-size: 50px;
+	margin: 0;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+}
+
+</style>
+
+<body>
+
+<div id=header>i want...</div>
+<div id=header2>for christmas</div>
+<div id="header3">please get me everything.</div>
+<div id="text"></div>
+
+<script>
+
+		var text = document.getElementById("text");
+
+		var words = ["musical instruments", "better eyesight", "a scooter", "a merry christmas", "world peace", "assorted colored pencils", "ikea furniture", "a bonsai tree", "square watermelons from japan", "ripe mangoes in the winter", "to go somewhere warm", "a quilt", "legoes", "hot cocoa", "books", "movies to have good lighting again", "knit gloves", "a kite", "more trees", "money"]
+
+
+		function changeWords (){
+					var random = Math.floor(Math.random()*20)
+
+		text.innerText = words[random]
+		}
+		
+		var x = setInterval(changeWords, 100)
+	
+</script>
+
+</body>
+</html>
