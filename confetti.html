@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Major+Mono+Display&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+
+		body{
+			background-color: lightblue;
+		}
+
+		.littles{
+			width: 15px;
+			height: 30px;
+			display: inline-block;
+		}
+
+		#text{
+			font-size: 150px;
+			color: black;
+			font-family: "Londrina Outline";
+			position: relative;
+			left: 30%;
+			top: 300px;
+
+		}
+
+	</style>
+</head>
+<body>
+
+	<div id="text">CONFETTI</div>
+
+	<script type="text/javascript">
+		
+		function makeConfetti (){
+			let confetti = document.createElement("div")
+			confetti.classList.add("littles")
+			document.body.appendChild(confetti)	
+
+			let r= Math.round(Math.random()*255)
+			let g= Math.round(Math.random()*255)
+			let b= Math.round(Math.random()*255)
+
+			confetti.style.backgroundColor="rgb("+r+","+g+","+b+")"	
+		}
+
+		setInterval(makeConfetti, 1000)
+	</script>
+
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Major+Mono+Display&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+		
+		body{
+			background-color: rgb(0, 0, 255);
+		}
+
+		#text{
+			font-size: 70px;
+			font-family: "Londrina Outline", sans-serif;
+			position: relative;
+			left: 25%;
+			top: 300px;
+
+		}
+
+		#text2{
+			font-size: 30px;
+			font-family: "Londrina Outline", sans-serif;
+			position: relative;
+			left: 25%;
+			top: 300px;
+			letter-spacing: 20.5px;
+		}
+
+		#rectangle1 {
+  			width: 700px;
+ 			height: 2px;
+ 	 		background-color: black;
+ 	 		position: relative;
+ 	 		left: 25%;
+			top: 310px;
+		}
+
+		#rectangle2 {
+  			width: 700px;
+ 			height: 2px;
+ 	 		background-color: black;
+ 	 		position: relative;
+ 	 		left: 25%;
+			top: 175px;
+		}
+
+	</style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<a id="text">RANDOM COLOR GENERATOR</a>
+<br>
+	<a id="text2">TYPE FOR A DISCO PARTY</a>
+<br>
+	<div id="rectangle1"></div>
+
+	<div id="rectangle2"></div>
+
+	<script type="text/javascript">
+
+		document.addEventListener("keypress",
+			function(){
+				let r = Math.round(Math.random()*255)
+				let g = Math.round(Math.random()*255)
+				let b = Math.round(Math.random()*255)
+
+				document.body.style.backgroundColor =
+				"rgb("+r+","+g+","+b+")"
+			})
+
+	</script>
+
+</body>
+</html>

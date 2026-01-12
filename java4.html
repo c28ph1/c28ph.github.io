@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+
+		body{
+	background-image: url(https://t3.ftcdn.net/jpg/05/70/00/72/360_F_570007289_N0SJF8OSspEcLLGS5OEuU3oATHQiPQja.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+
+}
+
+	#text{
+	color: brown;
+	font-size: 50px;
+	top: 20px;
+
+</style>
+
+</head>
+
+<body>
+
+  	<div id="text"></div>
+
+	<script type="text/javascript">
+
+		var text = document.getElementById("text");
+
+		var words = ["ULYSSES", "THE GREAT GATSBY", "A PORTRAIT OF THE ARTIST AS A YOUNG MAN", "LOLITA", 
+			"BRAVE NEW WORLD", "THE SOUND AND THE FURY", "CATCH-22", "DARKNESS AT NOON", "SONS AND LOVERS" , "THE GRAPES OF WRATH", "UNDER THE VOLCANO", "THE WAY OF ALL FLESH", "1984", "INVISIBLE MAN", "A PASSAGE TO INDIA"]
+
+		function changeWords (){
+					var random = Math.floor(Math.random()*15)
+
+		text.innerText = words[random]}
+		
+		var x = setInterval(changeWords, 500)
+
+	</script>
+
+</body>
+</html>
