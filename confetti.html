@@ -9,18 +9,36 @@
 	<style type="text/css">
 
 		body{
-			background-color: lightblue;
+			background-color: black;
 		}
 
 		.littles{
 			width: 15px;
 			height: 30px;
 			display: inline-block;
+			position: absolute;
+			top: 100px;
+			left: 200px;
+			animation-name: fall;
+			animation-duration: 10s;
+			animation-iteration-count: infinite;
+		}
+
+		@keyframes fall{
+			0%{
+				top: -100px;
+				rotate: 50deg;
+			}
+
+			100%{
+				top: 1500px;
+				rotate: 250deg;
+			}
 		}
 
 		#text{
 			font-size: 150px;
-			color: black;
+			color: white;
 			font-family: "Londrina Outline";
 			position: relative;
 			left: 30%;
@@ -45,10 +63,22 @@
 			let g= Math.round(Math.random()*255)
 			let b= Math.round(Math.random()*255)
 
-			confetti.style.backgroundColor="rgb("+r+","+g+","+b+")"	
+			confetti.style.backgroundColor="rgb("+r+","+g+","+b+")"
+
+			confetti.style.left=Math.random()*2000 + "px"
+			confetti.style.top=Math.random()*1000 + "px"
+
+			confetti.style.width=Math.random()*20 + "px"
+			confetti.style.height=Math.random()*60 + "px"
+
+			confetti.style.rotate = Math.random()*600 + "deg" 
+
 		}
 
-		setInterval(makeConfetti, 1000)
+			setInterval(makeConfetti, 20)
+
+			
+
 	</script>
 
 
