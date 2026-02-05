@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+
+	<style>
+		#train{
+			display: flex; 
+			gap: 12px;
+		}
+
+		.cart{
+			top: 50px;
+			border: 1px solid black;
+			min-width: 100px;
+			height: 80px;
+			text-align: center;
+			position: relative;
+		}
+
+		.cart:before {
+				content: "";
+				width: 30px;
+				height: 30px;
+				border: 1px solid black;
+				display: block;
+				border-radius: 50%;
+				position: absolute;
+				bottom: -15px;
+				background-color: white;
+				left: 5px;
+		}
+
+		.cart:after {
+				content: "";
+				width: 30px;
+				height: 30px;
+				border: 1px solid black;
+				display: block;
+				border-radius: 50%;
+				position: absolute;
+				bottom: -15px;
+				background-color: white;
+				left: 65px;
+		}
+
+	</style>
+
+</head>
+<body>
+	<button id="add-person">add person</button>
+	<button id="remove-last-person">remove last person</button>
+	<input type="text" id="person">
+
+	<div id="train">
+		<div class="cart">kate</div>
+		<div class="cart">parker</div>
+		<div class="cart">sophie</div>
+	</div>
+
+	<script>
+		let people = ["kate", "parker", "evan"]
+		people.push("jiyaa")
+		people.push("owen")
+		let lastPerson = people.pop()
+		console.log(lastPerson)
+		console.log(people)
+
+		let addPersonBtn = document.getElementById("add-person")
+		let removeLastPersonBtn = document.getElementById("remove-last-person")
+
+		addPersonBtn.addEventListener("click", function() {
+			let personInput = document.getElementById("person")
+			people.push(personInput.value)
+			personInput.value = ""
+			console.log(people)
+		})
+
+		removeLastPersonBtn.addEventListener("click", function() {
+			people.pop()
+			console.log(people)
+		})
+
+	</script>
+
+</body>
+</html>
