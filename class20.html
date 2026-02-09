@@ -56,12 +56,29 @@
 
 	<div id="train">
 		<div class="cart">kate</div>
-		<div class="cart">parker</div>
 		<div class="cart">sophie</div>
+		<div class="cart">parker</div>
 	</div>
 
 	<script>
-		let people = ["kate", "parker", "evan"]
+		let people = ["kate", "sophie", "parker", "owen", "kobi"]
+		let train = document.getElementById("train")
+		// people[0] people[1] people [3]
+
+		function makeTrain() {
+			train.innerHTML = ""
+			for(let i = 0; i < people.length; i++) {
+			console.log(people[i])
+			let cart = document.createElement('div')
+			cart.classList.add("cart")
+			cart.textContent = people[i]
+			train.appendChild(cart)
+			}	
+		}
+
+		makeTrain()
+
+
 		people.push("jiyaa")
 		people.push("owen")
 		let lastPerson = people.pop()
@@ -76,12 +93,18 @@
 			people.push(personInput.value)
 			personInput.value = ""
 			console.log(people)
+
+			makeTrain()
 		})
 
 		removeLastPersonBtn.addEventListener("click", function() {
 			people.pop()
+			makeTrain()
 			console.log(people)
 		})
+
+
+	
 
 	</script>
 
