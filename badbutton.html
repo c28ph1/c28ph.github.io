@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+</head>
+<style>
+	#badbutton{
+		position: absolute;
+		color: white;
+		background-color: orangered;
+		height: 40px;
+		width: 200px;
+		font-size: 20px;
+		border-radius: 10px
+		
+	}
+</style>
+	
+<body>
+	<button id=badbutton>CAN'T CLICK ME</button>
+</body>
+<script>
+
+	let badbutton = document.getElementById("badbutton")
+	console.log(badbutton)
+	
+	badbutton.addEventListener("mouseout", function(){
+		badbutton.style.top = Math.random() * window.innerHeight + "px"
+		badbutton.style.left = Math.random() * window.innerWidth + "px"
+	})
+	
+	badbutton.addEventListener("mouseover", function(){
+		badbutton.style.top = Math.random() * window.innerHeight + "px"
+		badbutton.style.left = Math.random() * window.innerWidth + "px"
+	})
+
+</script>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Major+Mono+Display&display=swap" rel="stylesheet">
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+
+
+		body{
+			background-image: url(https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+		}
+			
+		a{
+			color:white;
+			text-decoration: none;
+			font-family: "Londrina Outline", sans-serif;
+			font-size: 30px;
+			writing-mode: vertical-lr;
+			text-orientation: upright;
+			text-align: center;
+		}
+
+		p{
+			font-family: "Major Mono Display", monospace;
+			font-size:50px;
+			color:white;
+		}
+
+		#meteor{
+			width: 150px;
+			height: 150px;
+			background-size:contain;
+			animation-name: fly;
+			background-repeat: no-repeat;
+			animation-duration: 8s;
+			animation-iteration-count: infinite;
+			position: absolute;
+			top:20px;
+			background-image: url(meteor.png);
+			animation-timing-function: linear;
+		}
+
+		@keyframes fly{
+			0%{
+				left:-10%;
+				top: 100px;
+				transform: rotate(0deg);
+			}
+
+			50%{
+
+				left:55%;
+				top: -60px;
+			}
+
+			100%{
+				left:110%;
+				top: 200px;
+				transform: rotate(400deg);
+			}
+		}
+
+		#meteor2{
+			width: 150px;
+			height: 150px;
+			background-size:contain;
+			animation-name: fly2;
+			background-repeat: no-repeat;
+			animation-duration: 7s;
+			animation-iteration-count: infinite;
+			position: absolute;
+			top:20px;
+			background-image: url(meteor.png);
+			animation-timing-function: linear;
+		}
+
+		@keyframes fly2{
+			0%{
+				left:-10%;
+				top: 700px;
+				transform: rotate(0deg);
+
+			}
+
+			50%{
+
+				left:55%;
+				top: 650px;
+			}
+
+			100%{
+				left:110%;
+				top: 600px;
+				transform: rotate(600deg);
+			}
+		}
+
+		#circle1{
+			height:500px;
+			width:500px;
+			background-color: darkred;
+			background-image: linear-gradient(to bottom, darkred, yellow);
+		}
+
+
+		#circle2{
+			height:400px;
+			width:400px;
+			background-color: blueviolet;
+			background-image: linear-gradient(to right, blueviolet, darkred);
+			top: -50px;
+		}
+
+		#circle3{
+			height:300px;
+			width:300px;
+			background-color: darkgreen;
+			background-image: linear-gradient(to left, lightblue, darkgreen);
+			top: -90px;
+
+		}
+
+		.planet{
+			border-radius: 50%;
+			text-align:center;
+			display:inline-block;
+			margin: 30px;
+			position: relative;
+		}
+
+		.text{
+			position:relative;
+			left:45%;
+		}
+
+
+
+
+	</style>
+	
+</head>
+<body>
+
+<br>
+
+<p style="text-align: center;">WELCOME TO PARKER'S GALAXY</p>
+
+<a href="projects.html">
+	<div class="planet" id="circle1">
+		<div class="text">PROJECTS</div>
+</div>
+</a>
+
+<a href="journal.html">
+	<div class="planet" id="circle2">
+		<div class="text">JOURNAL</div>
+</div>
+</a>
+
+<a href="aboutme.html">
+	<div class="planet" id="circle3">
+		<div class="text">ABOUT</div>
+</div>
+</a>
+
+<div id="meteor"></div>
+
+<div id="meteor2"></div>
+
+<audio>
+	<source src="" type="">
+	
+</audio>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.11.12/lib/p5.min.js"></script>
+</head>
+<body>
+	<script>
+		let xpos
+		let ypos
+		let fillColor = "blue"
+		function setup() {
+			createCanvas(windowWidth, windowHeight)
+			xpos=width/2
+			ypos=height/2
+			yspeed=5
+			xspeed=8
+		}
+
+		function draw() {
+			background(255,255,255)
+			if (xpos > width -30 || xpos -40 < 0) {
+				xspeed=xspeed * -1
+			}
+
+			if (ypos > height -30 || ypos -30 < 0) {
+				yspeed=yspeed * -1
+			}
+
+			xpos += xspeed
+			ypos += yspeed
+
+			circle(xpos, ypos, 50)
+
+			fill(fillColor)
+			changeBallColor()
+		}
+
+		function changeBallColor() {
+			if (xpos > width/2 && ypos < height/2) {
+				fillColor = "green"
+			} else if (xpos > width/2 && ypos > height/2) {
+				fillColor = "blue"
+			} else if (xpos < width/2 && ypos < height/2) {
+				fillColor = "yellow"
+			} else {
+				fillColor = "red"
+			}
+		}
+	</script>
+</body>
+</html>

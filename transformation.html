@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.11.12/lib/p5.min.js"></script>
+</head>
+<body>
+	<script>
+		function setup() {
+			createCanvas(800, 800);
+		}
+
+		function draw() {
+			background(107, 201, 232)
+			push()
+			translate(width/2, height/2) // moves the anchor point from (0,0) to the center of the canvas
+			
+			rotate(frameCount*.1)
+			rect(0, 0, 100, 200)
+			pop()
+
+			push()
+			rectMode(CENTER)
+			translate(100, 100)
+			rotate(PI/3)
+			rect(0, 0, 80, 20)
+			pop()
+
+			push()
+			translate(width/2, height/2)
+			rotate(frameCount * 0.05)
+			circle(-100, -100, 80)
+			circle(100, -100, 80)
+			circle(0, 0, 200)
+			pop()
+
+			push()
+			rectMode(CENTER)
+			translate(100, 100)
+			rotate(frameCount*0.05)
+			circle(-25, -25, 50)
+			circle(25, -25, 20)
+			circle(0, 0, 50)
+			pop()
+		}
+
+
+	</script>
+</body>
+</html>
